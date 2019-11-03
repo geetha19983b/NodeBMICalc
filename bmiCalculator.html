@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>BMI Calculator</title>
+  <style type="text/css">
+    body{
+      text-align:center;
+    }
+     h1{
+      margin-top:5px;
+    }
+    .calc {
+      margin: 15% auto;
+      background: #2F1E27;
+      width: 40%;
+      color: white;
+     border-radius:12px;
+
+
+    }
+
+    .bmifrm {
+      padding: 15px;
+      margin: 14px;
+
+
+
+    }
+
+    .bmifrm input {
+
+      margin: 4px;
+    }
+
+    .frmrow {
+
+      display: block;
+    }
+
+    .frmrow label {
+      text-align: left;
+    }
+
+    button {
+      background: rgba(197, 62, 126, .33) ! important;
+      color: #fff;
+      padding: 10px;
+      margin: 5px;
+
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calc">
+
+
+    <form action="/bmicalculator" method="post">
+      <h1>BMI calculator</h1>
+      <div class="bmifrm">
+
+
+
+        <label for="">Enter Height :</label>
+        <input type="text" name="height">
+      </div>
+      <div class="frmrow">
+        <label for="">Enter Weight :</label>
+        <input type="text" name="weight">
+      </div>
+      <button type="submit" name="submit">Calculate BMI</button>
+
+    </form>
+  </div>
+</body>
+
+</html>
